@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="Flower Flower vase" description="This is a demo class" />
+    <meta http-equiv="refresh" content="2; url='https://www.github.com'" />
+    <title>First Demo Class</title>
+    <style>
+      body {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      .container {
+        width: 400px;
+        margin: 0 auto;
+        border: 1px solid #e3e3e3;
+        border-radius: 10px;
+      }
+
+      .description::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      img {
+        max-width: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+
+      p,
+      div {
+        padding: 15px 10px;
+      }
+
+      figure {
+        height: 200px;
+        position: relative;
+      }
+
+      figure:hover figcaption {
+        opacity: 1;
+      }
+
+      figcaption {
+        position: absolute;
+        top: 0;
+        left: 0px;
+        opacity: 0;
+        transition: all 2000ms ease-in-out;
+      }
+
+      button {
+        padding: 6px 45px;
+        font-size: inherit;
+        border-radius: 8px;
+        border: 1px solid green;
+        background-color: green;
+        color: white;
+        float: right;
+        transition: all 0.5s ease-in;
+      }
+
+      button:hover {
+        background-color: greenyellow;
+        border: 1px solid black;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Flower Shop</h1>
+    </header>
+    <main class="container">
+      <figure>
+        <img src="flower.webp" alt="sweet flower" />
+        <figcaption>Sweet Flower</figcaption>
+      </figure>
+      <div class="description">
+        <p>
+          This is bright and colourful! This can be used to decorate living room
+          and compound.
+        </p>
+        <button>Buy</button>
+      </div>
+    </main>
+  </body>
+</html>
+<!-- This is a comment -->
